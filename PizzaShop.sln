@@ -26,6 +26,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaShop.AppHost", "src\as
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaShop.ServiceDefaults", "src\aspire\PizzaShop.ServiceDefaults\PizzaShop.ServiceDefaults.csproj", "{2C1888DA-E613-448A-857B-97339A608C2E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "shared", "shared", "{6A4E302B-F91C-4227-B202-3C4FB23884F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaShop.Shared", "src\shared\PizzaShop.Shared\PizzaShop.Shared.csproj", "{786A4094-FECD-4009-8303-985D96E84C14}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,6 +44,10 @@ Global
 		{2C1888DA-E613-448A-857B-97339A608C2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C1888DA-E613-448A-857B-97339A608C2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C1888DA-E613-448A-857B-97339A608C2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{786A4094-FECD-4009-8303-985D96E84C14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{786A4094-FECD-4009-8303-985D96E84C14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{786A4094-FECD-4009-8303-985D96E84C14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{786A4094-FECD-4009-8303-985D96E84C14}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,6 +58,8 @@ Global
 		{2D29D49C-7844-43F9-A6ED-0DED3FCED137} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{FCCEB8A0-58B4-49B4-8B77-36BDDB76C7F8} = {B5710803-5C8F-4CB2-890B-3B6CC399FBF5}
 		{2C1888DA-E613-448A-857B-97339A608C2E} = {B5710803-5C8F-4CB2-890B-3B6CC399FBF5}
+		{6A4E302B-F91C-4227-B202-3C4FB23884F6} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{786A4094-FECD-4009-8303-985D96E84C14} = {6A4E302B-F91C-4227-B202-3C4FB23884F6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CB89D783-A456-4E52-86C6-F7B20A46F097}
