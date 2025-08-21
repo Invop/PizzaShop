@@ -1,17 +1,17 @@
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.ServiceDiscovery;
 using OpenTelemetry;
 using OpenTelemetry.Metrics;
 using OpenTelemetry.Trace;
-
+#pragma warning disable S125
 namespace Microsoft.Extensions.Hosting;
 // Adds common .NET Aspire services: service discovery, resilience, health checks, and OpenTelemetry.
 // This project should be referenced by each service project in your solution.
 // To learn more about using this project, see https://aka.ms/dotnet/aspire/service-defaults
+#pragma warning disable CA1724
 public static class Extensions
 {
   private const string HealthEndpointPath = "/health";
@@ -61,15 +61,15 @@ public static class Extensions
         .WithTracing(tracing =>
         {
           tracing.AddSource(builder.Environment.ApplicationName)
-                  .AddAspNetCoreInstrumentation(tracing =>
-                      // Exclude health check requests from tracing
-                      tracing.Filter = context =>
-                          !context.Request.Path.StartsWithSegments(HealthEndpointPath)
-                          && !context.Request.Path.StartsWithSegments(AlivenessEndpointPath)
-                  )
-                  // Uncomment the following line to enable gRPC instrumentation (requires the OpenTelemetry.Instrumentation.GrpcNetClient package)
-                  //.AddGrpcClientInstrumentation()
-                  .AddHttpClientInstrumentation();
+              .AddAspNetCoreInstrumentation(tracing =>
+                  // Exclude health check requests from tracing
+                  tracing.Filter = context =>
+                      !context.Request.Path.StartsWithSegments(HealthEndpointPath, StringComparison.OrdinalIgnoreCase)
+                      && !context.Request.Path.StartsWithSegments(AlivenessEndpointPath, StringComparison.OrdinalIgnoreCase)
+              )
+              // Uncomment the following line to enable gRPC instrumentation (requires the OpenTelemetry.Instrumentation.GrpcNetClient package)
+              //.AddGrpcClientInstrumentation()
+              .AddHttpClientInstrumentation();
         });
 
     builder.AddOpenTelemetryExporters();
@@ -107,6 +107,7 @@ public static class Extensions
 
   public static WebApplication MapDefaultEndpoints(this WebApplication app)
   {
+    ArgumentNullException.ThrowIfNull(app);
     // Adding health checks endpoints to applications in non-development environments has security implications.
     // See https://aka.ms/dotnet/aspire/healthchecks for details before enabling these endpoints in non-development environments.
     if (app.Environment.IsDevelopment())
