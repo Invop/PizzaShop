@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36414.22 d17.14
+VisualStudioVersion = 17.14.36414.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
@@ -32,6 +32,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaShop.Shared", "src\sha
 EndProject
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "pizzashop.client", "src\frontend\pizzashop.client\pizzashop.client.esproj", "{1427BE08-5BB8-1870-0560-7B62B2512CBF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaShop.EventBus", "src\shared\PizzaShop.EventBus\PizzaShop.EventBus.csproj", "{F181B32D-A999-4737-A6F2-427EE9BDF39A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaShop.EventBusRabbitMQ", "src\shared\PizzaShop.EventBusRabbitMQ\PizzaShop.EventBusRabbitMQ.csproj", "{E906B20A-2466-44F4-933C-43890F4D95E6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -56,6 +60,14 @@ Global
 		{1427BE08-5BB8-1870-0560-7B62B2512CBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1427BE08-5BB8-1870-0560-7B62B2512CBF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1427BE08-5BB8-1870-0560-7B62B2512CBF}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{F181B32D-A999-4737-A6F2-427EE9BDF39A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F181B32D-A999-4737-A6F2-427EE9BDF39A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F181B32D-A999-4737-A6F2-427EE9BDF39A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F181B32D-A999-4737-A6F2-427EE9BDF39A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E906B20A-2466-44F4-933C-43890F4D95E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E906B20A-2466-44F4-933C-43890F4D95E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E906B20A-2466-44F4-933C-43890F4D95E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E906B20A-2466-44F4-933C-43890F4D95E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -69,6 +81,8 @@ Global
 		{6A4E302B-F91C-4227-B202-3C4FB23884F6} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{786A4094-FECD-4009-8303-985D96E84C14} = {6A4E302B-F91C-4227-B202-3C4FB23884F6}
 		{1427BE08-5BB8-1870-0560-7B62B2512CBF} = {2D29D49C-7844-43F9-A6ED-0DED3FCED137}
+		{F181B32D-A999-4737-A6F2-427EE9BDF39A} = {6A4E302B-F91C-4227-B202-3C4FB23884F6}
+		{E906B20A-2466-44F4-933C-43890F4D95E6} = {6A4E302B-F91C-4227-B202-3C4FB23884F6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CB89D783-A456-4E52-86C6-F7B20A46F097}
