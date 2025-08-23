@@ -16,4 +16,8 @@
     <PackageReference Include="Aspire.Hosting.Redis" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\services\catalog\PizzaShop.Catalog.Api\PizzaShop.Catalog.Api.csproj" />
+  </ItemGroup>
+
 </Project>

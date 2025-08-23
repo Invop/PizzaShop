@@ -1,0 +1,40 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "PizzaShop Catalog API",
+    "description": "API for managing the PizzaShop catalog. This API version has been deprecated.",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/v1/catalog/items": {
+      "get": {
+        "tags": [
+          "Catalog"
+        ],
+        "operationId": "GetItemsV1",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "deprecated": true
+      }
+    }
+  },
+  "components": { },
+  "tags": [
+    {
+      "name": "Catalog"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" />
+    <PackageReference Include="Scrutor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\shared\PizzaShop.BuildingBlocks.Application\PizzaShop.BuildingBlocks.Application.csproj" />
+    <ProjectReference Include="..\..\..\shared\PizzaShop.EventBusRabbitMQ\PizzaShop.EventBusRabbitMQ.csproj" />
+    <ProjectReference Include="..\PizzaShop.Catalog.Domain\PizzaShop.Catalog.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

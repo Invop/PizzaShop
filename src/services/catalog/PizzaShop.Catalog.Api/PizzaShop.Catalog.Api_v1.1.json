@@ -1,0 +1,39 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "PizzaShop Catalog API",
+    "description": "API for managing the PizzaShop catalog.",
+    "version": "1.1"
+  },
+  "paths": {
+    "/api/v1.1/catalog/items": {
+      "get": {
+        "tags": [
+          "Catalog"
+        ],
+        "operationId": "GetItemsV11",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": { },
+  "tags": [
+    {
+      "name": "Catalog"
+    }
+  ]
+}

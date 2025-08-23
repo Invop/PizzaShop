@@ -1,0 +1,8 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\PizzaShop.Catalog.Application\PizzaShop.Catalog.Application.csproj" />
+  </ItemGroup>
+
+</Project>

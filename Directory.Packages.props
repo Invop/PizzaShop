@@ -3,17 +3,25 @@
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
     <CentralPackageTransitivePinningEnabled>true</CentralPackageTransitivePinningEnabled>
   </PropertyGroup>
-  <!--.NET 9 packages. Most of them will work on .NET 8. If you need to, make the updates here individually.-->
   <ItemGroup>
     <!-- Aspire Host -->
     <PackageVersion Include="Aspire.Hosting.AppHost" Version="9.4.1" />
     <PackageVersion Include="Aspire.Hosting.RabbitMQ" Version="9.4.1" />
-	<PackageVersion Include="Aspire.Hosting.Redis" Version="9.4.1" />
-	<!-- Aspire Client -->
-	<PackageVersion Include="Aspire.RabbitMQ.Client" Version="9.4.1" />
-
-
-	  <!-- Aspire ServiceDefaults -->
+    <PackageVersion Include="Aspire.Hosting.Redis" Version="9.4.1" />
+    <!-- Aspire Client -->
+    <PackageVersion Include="Aspire.RabbitMQ.Client" Version="9.4.1" />
+    <!--API-->
+    <PackageVersion Include="Microsoft.Extensions.ApiDescription.Server" Version="9.0.8">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageVersion>
+	  <PackageVersion Include="Asp.Versioning.Http" Version="8.1.0" />
+    <!--Application-->
+    <PackageVersion Include="FluentValidation.DependencyInjectionExtensions" Version="12.0.0" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore" Version="9.0.8" />
+    <PackageVersion Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.8" />
+    <PackageVersion Include="Scrutor" Version="6.1.0" />
+    <!-- Aspire ServiceDefaults -->
     <PackageVersion Include="Asp.Versioning.Mvc.ApiExplorer" Version="8.1.0" />
     <PackageVersion Include="Scalar.AspNetCore" Version="2.7.0" />
     <PackageVersion Include="Microsoft.AspNetCore.OpenApi" Version="9.0.8" />
