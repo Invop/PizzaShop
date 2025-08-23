@@ -4,9 +4,6 @@
   </PropertyGroup>
   <!--.NET 9 packages. Most of them will work on .NET 8. If you need to, make the updates here individually.-->
   <ItemGroup>
-    <!-- Static code analysis -->
-
-    <PackageVersion Include="SonarAnalyzer.CSharp" Version="10.15.0.120848" />
     <!-- Aspire Host -->
     <PackageVersion Include="Aspire.Hosting.AppHost" Version="9.4.1" />
     <PackageVersion Include="Aspire.Hosting.RabbitMQ" Version="9.4.1" />
