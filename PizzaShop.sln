@@ -36,6 +36,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaShop.EventBus", "src\s
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaShop.EventBusRabbitMQ", "src\shared\PizzaShop.EventBusRabbitMQ\PizzaShop.EventBusRabbitMQ.csproj", "{E906B20A-2466-44F4-933C-43890F4D95E6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaShop.BuildingBlocks.Application", "src\shared\PizzaShop.BuildingBlocks.Application\PizzaShop.BuildingBlocks.Application.csproj", "{98A69068-BF69-4A93-A5FB-6719BE8D85B7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -68,6 +70,10 @@ Global
 		{E906B20A-2466-44F4-933C-43890F4D95E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E906B20A-2466-44F4-933C-43890F4D95E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E906B20A-2466-44F4-933C-43890F4D95E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98A69068-BF69-4A93-A5FB-6719BE8D85B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98A69068-BF69-4A93-A5FB-6719BE8D85B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98A69068-BF69-4A93-A5FB-6719BE8D85B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98A69068-BF69-4A93-A5FB-6719BE8D85B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -83,6 +89,7 @@ Global
 		{1427BE08-5BB8-1870-0560-7B62B2512CBF} = {2D29D49C-7844-43F9-A6ED-0DED3FCED137}
 		{F181B32D-A999-4737-A6F2-427EE9BDF39A} = {6A4E302B-F91C-4227-B202-3C4FB23884F6}
 		{E906B20A-2466-44F4-933C-43890F4D95E6} = {6A4E302B-F91C-4227-B202-3C4FB23884F6}
+		{98A69068-BF69-4A93-A5FB-6719BE8D85B7} = {6A4E302B-F91C-4227-B202-3C4FB23884F6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CB89D783-A456-4E52-86C6-F7B20A46F097}
