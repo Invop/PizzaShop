@@ -1,6 +1,4 @@
-﻿using PizzaShop.Shared;
-
-namespace PizzaShop.BuildingBlocks.Application.Abstractions.Messaging;
+﻿namespace PizzaShop.Shared.Abstractions.Messaging;
 
 public interface ICommandHandler<in TCommand>
     where TCommand : ICommand

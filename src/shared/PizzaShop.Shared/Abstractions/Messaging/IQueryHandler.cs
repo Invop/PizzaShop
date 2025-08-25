@@ -1,4 +1,4 @@
-﻿namespace PizzaShop.BuildingBlocks.Application.Abstractions.Messaging;
+﻿namespace PizzaShop.Shared.Abstractions.Messaging;
 
 public interface IQueryHandler<in TQuery, TResponse>
     where TQuery : IQuery<TResponse>

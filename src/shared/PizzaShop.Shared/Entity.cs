@@ -1,4 +1,6 @@
-﻿namespace PizzaShop.Shared;
+﻿using PizzaShop.Shared.Abstractions.DomainEvents;
+
+namespace PizzaShop.Shared;
 
 public abstract class Entity
 {

@@ -1,4 +1,4 @@
-﻿namespace PizzaShop.Shared;
+﻿namespace PizzaShop.Shared.Abstractions.DomainEvents;
 
 public interface IDomainEventHandler<in T> where T : IDomainEvent
 {

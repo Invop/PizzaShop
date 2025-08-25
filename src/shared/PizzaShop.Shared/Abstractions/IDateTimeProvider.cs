@@ -1,4 +1,4 @@
-﻿namespace PizzaShop.Shared;
+﻿namespace PizzaShop.Shared.Abstractions;
 
 public interface IDateTimeProvider
 {
