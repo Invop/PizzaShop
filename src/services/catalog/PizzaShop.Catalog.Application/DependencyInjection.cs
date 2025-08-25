@@ -1,14 +1,14 @@
 ﻿using FluentValidation;
 using Microsoft.Extensions.DependencyInjection;
-using PizzaShop.BuildingBlocks.Application.Abstractions.Messaging;
-using PizzaShop.Shared;
+using PizzaShop.Shared.Abstractions.DomainEvents;
+using PizzaShop.Shared.Abstractions.Messaging;
 namespace PizzaShop.Catalog.Application;
 
 public static class DependencyInjection
 {
     public static IServiceCollection AddApplication(this IServiceCollection services)
     {
-        services.Scan(scan => scan.FromAssembliesOf(typeof(DependencyInjection))
+        services.Scan(scan => scan.FromAssembliesOf(typeof(IAssemblyMarker))
             .AddClasses(classes => classes.AssignableTo(typeof(IQueryHandler<,>)), publicOnly: false)
                 .AsImplementedInterfaces()
                 .WithScopedLifetime()
@@ -19,13 +19,14 @@ public static class DependencyInjection
                 .AsImplementedInterfaces()
                 .WithScopedLifetime());
 
+        //TODO: DECORATORS?
 
-        services.Scan(scan => scan.FromAssembliesOf(typeof(DependencyInjection))
+        services.Scan(scan => scan.FromAssembliesOf(typeof(IAssemblyMarker))
             .AddClasses(classes => classes.AssignableTo(typeof(IDomainEventHandler<>)), publicOnly: false)
             .AsImplementedInterfaces()
             .WithScopedLifetime());
 
-        services.AddValidatorsFromAssembly(typeof(DependencyInjection).Assembly, includeInternalTypes: true);
+        services.AddValidatorsFromAssembly(typeof(IAssemblyMarker).Assembly, includeInternalTypes: true);
 
         return services;
     }

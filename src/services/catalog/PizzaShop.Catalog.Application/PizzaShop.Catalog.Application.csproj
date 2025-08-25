@@ -9,9 +9,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\shared\PizzaShop.BuildingBlocks.Application\PizzaShop.BuildingBlocks.Application.csproj" />
     <ProjectReference Include="..\..\..\shared\PizzaShop.EventBusRabbitMQ\PizzaShop.EventBusRabbitMQ.csproj" />
     <ProjectReference Include="..\PizzaShop.Catalog.Domain\PizzaShop.Catalog.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Categories\" />
+    <Folder Include="Items\" />
   </ItemGroup>
 
 </Project>

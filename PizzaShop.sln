@@ -46,7 +46,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaShop.Catalog.Applicati
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaShop.Catalog.Infrastructure", "src\services\catalog\PizzaShop.Catalog.Infrastructure\PizzaShop.Catalog.Infrastructure.csproj", "{3C0E12F8-1E77-4EBA-AF11-7FB9C1E741B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaShop.BuildingBlocks.Application", "src\shared\PizzaShop.BuildingBlocks.Application\PizzaShop.BuildingBlocks.Application.csproj", "{98A69068-BF69-4A93-A5FB-6719BE8D85B7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchitectureTests", "tests\ArchitectureTests\ArchitectureTests.csproj", "{98133591-FE8A-470A-BBA1-3D76F6772676}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,10 +93,10 @@ Global
 		{3C0E12F8-1E77-4EBA-AF11-7FB9C1E741B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C0E12F8-1E77-4EBA-AF11-7FB9C1E741B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C0E12F8-1E77-4EBA-AF11-7FB9C1E741B7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{98A69068-BF69-4A93-A5FB-6719BE8D85B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{98A69068-BF69-4A93-A5FB-6719BE8D85B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{98A69068-BF69-4A93-A5FB-6719BE8D85B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{98A69068-BF69-4A93-A5FB-6719BE8D85B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98133591-FE8A-470A-BBA1-3D76F6772676}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98133591-FE8A-470A-BBA1-3D76F6772676}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98133591-FE8A-470A-BBA1-3D76F6772676}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98133591-FE8A-470A-BBA1-3D76F6772676}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -117,7 +117,7 @@ Global
 		{1C521C40-6958-488A-B36B-44ED16E8931B} = {BFDE10E6-3313-4429-AA3B-7AFB1C8B3507}
 		{8188C50E-2BB5-46D0-A553-A714F8AB4B61} = {BFDE10E6-3313-4429-AA3B-7AFB1C8B3507}
 		{3C0E12F8-1E77-4EBA-AF11-7FB9C1E741B7} = {BFDE10E6-3313-4429-AA3B-7AFB1C8B3507}
-		{98A69068-BF69-4A93-A5FB-6719BE8D85B7} = {6A4E302B-F91C-4227-B202-3C4FB23884F6}
+		{98133591-FE8A-470A-BBA1-3D76F6772676} = {4B5A2D61-CEFF-4336-9BA5-C9E613DFA5B1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CB89D783-A456-4E52-86C6-F7B20A46F097}
